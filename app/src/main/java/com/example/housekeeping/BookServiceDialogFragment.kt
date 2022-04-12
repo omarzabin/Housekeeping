@@ -45,9 +45,7 @@ class BookServiceDialogFragment:Fragment() {
             ArrayAdapter<String>(it ,android.R.layout.simple_expandable_list_item_1,hou)
         }
 
-        findBT.setOnClickListener{view ->
 
-        }
         findBT.setOnClickListener{view ->
             if (flag == "cooking") {
                 if (flag2 == "1") {
