@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6E8B98"
+    tools:context=".MainActivity">
+
     <item android:id="@+id/item1"
         android:title= ""
         android:icon="@drawable/ic_baseline_menu_24"
@@ -8,8 +14,6 @@
         />
     <item android:id="@+id/item2"
         app:showAsAction="never"
-        android:title="Omar"/>
-    <item android:id="@+id/item3"
-        app:showAsAction="never"
-        android:title="Omar"/>
+        android:title="Help"/>
+
 </menu>
