@@ -20,17 +20,18 @@ class MainActivity : AppCompatActivity() {
 //        }
         fragment1.setOnClickListener {
 
-            supportFragmentManager.beginTransaction().apply {
-                replace(R.id.mainLY, firstFragment)
-                commit()
-            }
+            var dialog_var = BookServiceDialogFragment()
+            dialog_var.show(supportFragmentManager, "Custom Dialog")
         }
         fragment2.setOnClickListener {
-            supportFragmentManager.beginTransaction().apply {
-                replace(R.id.mainLY, secondFragment)
-                commit()
-            }
+            var dialog_var = ProvideServiceDialogFragment()
+            dialog_var.show(supportFragmentManager, "Custom Dialog")
+
+//            supportFragmentManager.beginTransaction().apply {
+//                replace(R.id.mainLY, secondFragment)
+//                commit()
         }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

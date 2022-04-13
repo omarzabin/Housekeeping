@@ -5,9 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 
-class ProvideServiceDialogFragment:Fragment(R.layout.fragment_service_provide_dialog) {
+class ProvideServiceDialogFragment:DialogFragment(R.layout.fragment_service_provide_dialog) {
     override  fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
