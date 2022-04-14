@@ -23,6 +23,7 @@ class BookServiceDialogFragment:DialogFragment() {
         var flag = "Choose the service "
         var flag2 = "Choose hours "
         val findBT: Button = v.findViewById(R.id.findBT)
+        val cancelBT: Button = v.findViewById(R.id.canselBT)
         val spinnerVal1: Spinner = v.findViewById(R.id.categorySP)
         val spinnerVal2: Spinner = v.findViewById(R.id.hoursSP)
 
@@ -107,6 +108,7 @@ class BookServiceDialogFragment:DialogFragment() {
             }
 
         }
+
         spinnerVal1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                 flag = opt.get(p2) // p2 is the index of selected ite
@@ -129,6 +131,9 @@ class BookServiceDialogFragment:DialogFragment() {
             }
 
 
+        }
+        cancelBT.setOnClickListener {
+            dismiss()
         }
         return v
     }

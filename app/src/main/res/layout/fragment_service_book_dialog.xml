@@ -16,33 +16,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
+        app:layout_constraintVertical_bias="0.92"
 
-    <Spinner
-        android:id="@+id/categorySP"
-        android:layout_width="404dp"
+        />
+
+    <Button
+        android:id="@+id/canselBT"
+        android:layout_width="409dp"
         android:layout_height="54dp"
-        android:contentDescription="@string/app_name"
-        android:hint="Chose the services you need"
-        android:minHeight="48dp"
-        android:spinnerMode="dialog"
+        android:text="Cansel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <FrameLayout
         android:id="@+id/mainFR"
-        android:layout_width="408dp"
-        android:layout_height="421dp"
+        android:layout_width="410dp"
+        android:layout_height="392dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.719">
+        app:layout_constraintVertical_bias="0.654">
 
         <TextView
             android:id="@+id/textView2"
@@ -66,15 +64,30 @@
 
     <Spinner
         android:id="@+id/hoursSP"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
+        android:layout_width="390dp"
+        android:layout_height="48dp"
         android:contentDescription="@string/app_name"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.209" />
+        app:layout_constraintVertical_bias="0.241" />
+
+    <Spinner
+        android:id="@+id/categorySP"
+        android:layout_width="390dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/app_name"
+        android:hint="Chose the services you need"
+        android:minHeight="48dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
 
     <TextView
         android:id="@+id/textView3"
@@ -86,5 +99,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.074" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chose how many houres you whant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="726dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
