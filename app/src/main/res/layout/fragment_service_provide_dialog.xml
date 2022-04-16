@@ -42,7 +42,7 @@
             android:layout_width="186dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left|bottom"
-            android:text="Calculete " />
+            android:text="Enroll" />
 
         <Button
             android:id="@+id/canselBT"
